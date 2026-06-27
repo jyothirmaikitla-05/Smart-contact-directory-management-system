@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>View Contacts</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">📞 Smart Contact Directory</div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="add-contact.html">Add Contact</a></li>
+        <li><a href="view-contacts.html">View Contacts</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Team</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <div class="stats">
+        <div class="box">
+            <h3>Total Contacts</h3>
+            <h2 id="total">0</h2>
+        </div>
+    </div>
+
+    <div class="card">
+
+        <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search Contact by Name"
+        onkeyup="displayContacts()">
+
+        <button
+        class="export"
+        onclick="exportCSV()">
+        Export CSV
+        </button>
+
+    </div>
+
+    <div class="card">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="contactTable"></tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

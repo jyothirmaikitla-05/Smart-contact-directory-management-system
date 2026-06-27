@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Contact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">📞 Smart Contact Directory</div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="add-contact.html">Add Contact</a></li>
+        <li><a href="view-contacts.html">View Contacts</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Team</a></li>
+    </ul>
+</nav>
+
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Add New Contact</h2>
+
+        <input
+        type="text"
+        id="name"
+        placeholder="Full Name">
+
+        <input
+        type="text"
+        id="phone"
+        placeholder="Phone Number">
+
+        <input
+        type="email"
+        id="email"
+        placeholder="Email Address">
+
+        <textarea
+        id="address"
+        placeholder="Address">
+        </textarea>
+
+        <button
+        class="save"
+        onclick="saveContact()">
+        Save Contact
+        </button>
+<p style="margin-top:10px; color:gray;">
+    Enter contact details and click Save Contact.
+</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
